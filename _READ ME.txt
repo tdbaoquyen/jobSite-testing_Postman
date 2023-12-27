@@ -1,0 +1,9 @@
+## Practise in Website testing and API testing:
+
+1. Testing functions by using website:
+   - Create file Excel testcases + testscript for each of function, workflow of Website
+   - With FAILED testcases, create file Excel log bugs with "Defect Evidences"
+
+2. API testing functions by using Postman tool:
+   - Create file Excel testcases + testscript for each of function, workflow of Website
+   - With FAILED testcases, create file Excel log bugs with "Defect Evidences"

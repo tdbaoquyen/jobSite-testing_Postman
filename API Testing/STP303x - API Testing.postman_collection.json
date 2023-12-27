@@ -1,0 +1,5086 @@
+{
+	"info": {
+		"_postman_id": "1e77b582-603f-4974-8cba-f11fec7afee5",
+		"name": "STP303x - ASM3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29112866"
+	},
+	"item": [
+		{
+			"name": "1. ĐĂNG KÝ ỨNG VIÊN",
+			"item": [
+				{
+					"name": "Register - 1: missing [name]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 2: missing [email]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 3: missing [account]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 4: missing [password]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 5: missing [phone]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 6: missing [sex]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 7: missing [birthday]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 8: [password] 4 letters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Te12",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 9: [password] 7 letters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test123",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 10: [password] no UPPCASE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 11: [password] no lowercase",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "TEST1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 12: [password] no NUMBER",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "TestTest",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 13: missing [avatar]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "TestTest",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 14: wrong format [email]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "TestTest",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 15: wrong format [phone]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "TestTest",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 17: [password] 8 letters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng ký thông tin và tài khoản thành công\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"postman.setNextRequest(\"Register - 18: [password] 11 letters\");\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Test1234",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0909990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 18: [password] 11 letters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng ký thông tin và tài khoản thành công\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"postman.setNextRequest(\"UV-LogOn - 13: sucessfull - [password] 8 letters\");\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test001",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test001",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0918990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 19: missing [experience]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng ký thông tin và tài khoản thành công\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test002",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdb@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test002",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0908990990",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 20: missing [skill]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng ký thông tin và tài khoản thành công\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test003",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen003@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test003",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0908990330",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "vừa tốt nghiệp",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 21: missing [description]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng ký thông tin và tài khoản thành công\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test004",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen004@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test004",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0908990440",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 22: missing [foreiginLanguage]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng ký thông tin và tài khoản thành công\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test005",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen005@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test005",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0908990550",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "mới ra trường",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 23: missing [education]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng ký thông tin và tài khoản thành công\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test006",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen006@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test006",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0908990660",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "mới ra trường",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 24: duplicated [account]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test007",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen007@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test1234",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0908990770",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "mới ra trường",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 25: duplicated [email]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test008",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyentdbfx22851@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test008",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0908990880",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "mới ra trường",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - 26: duplicated [phone]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đã xảy ra lỗi khi đăng ký\", function () \r",
+									"{\r",
+									"    pm.response.to.have.status(500);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test009",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quyen009@funix.edu.vn",
+									"type": "text"
+								},
+								{
+									"key": "account",
+									"value": "test009",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Tester12345",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0908990880",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Nữ",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "01/01/1991",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "3 tháng",
+									"type": "text"
+								},
+								{
+									"key": "skill",
+									"value": "tin học cơ bản",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "mới ra trường",
+									"type": "text"
+								},
+								{
+									"key": "foreiginLanguage",
+									"value": "tiếng Anh",
+									"type": "text"
+								},
+								{
+									"key": "education",
+									"value": "tín chỉ",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "STP303x_API Testing with POSTMAN/_API Testing/testing.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "2. ĐĂNG NHẬP ỨNG VIÊN",
+			"item": [
+				{
+					"name": "UV-LogOn - 1: undefined [account]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Không tìm thấy tài khoản người dùng tương ứng\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Không tìm thấy tài khoản người dùng tương ứng\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test@@@\",\r\n    \"password\": \"Test1234\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 2: missing [account]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"\",\r\n    \"password\": \"Test1234\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 3: missing [password]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test1234\",\r\n    \"password\": \"\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 4: wrong [password]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test1234\",\r\n    \"password\": \"test001\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 5: [password] 4 lettes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test1234\",\r\n    \"password\": \"Te12\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 6: [password] 7 lettes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test001\",\r\n    \"password\": \"Test123\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 7: [password] no UPPERCASE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test1234\",\r\n    \"password\": \"test123\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 8: [password] no lowercase",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test1234\",\r\n    \"password\": \"TEST123\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 9: [password] no NUMBER",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test1234\",\r\n    \"password\": \"TESTtest\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 10: wrong [account] test001",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test001\",\r\n    \"password\": \"Test1234\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 11: wrong [account] test1234",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test1234\",\r\n    \"password\": \"Tester12345\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 13: sucessfull - [password] 8 letters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng nhập thành công\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Đăng nhập thành công\");\r",
+									"    pm.expect(pm.response.json().userId).to.not.null;\r",
+									"    pm.expect(pm.response.json().user.account).to.eql(\"test1234\");\r",
+									"});\r",
+									"pm.environment.set(\"test1234_token\", pm.response.json().token);\r",
+									"\r",
+									"postman.setNextRequest(\"UV-LogOn - 14: sucessfull - [password] 11 letters\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test1234\",\r\n    \"password\": \"Test1234\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UV-LogOn - 14: sucessfull - [password] 11 letters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng nhập thành công\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Đăng nhập thành công\");\r",
+									"    pm.expect(pm.response.json().userId).to.not.null;\r",
+									"    pm.expect(pm.response.json().user.account).to.eql(\"test001\");\r",
+									"});\r",
+									"pm.environment.set(\"test001_token\", pm.response.json().token);\r",
+									"\r",
+									"postman.setNextRequest(\"NTD-LogOn - 13: sucessfull - [password] 8 letters\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test001\",\r\n    \"password\": \"Tester12345\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "3. ĐĂNG NHẬP NHÀ TUYỂN DỤNG",
+			"item": [
+				{
+					"name": "NTD-LogOn - 1: undefined [account]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Không tìm thấy tài khoản người dùng tương ứng\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Không tìm thấy tài khoản người dùng tương ứng\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"test@@@\",\r\n    \"password\": \"Employ@1234\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 2: missing [account]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"\",\r\n    \"password\": \"Employ12\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 3: missing [password]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employee@\",\r\n    \"password\": \"\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 4: wrong [password]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employee@\",\r\n    \"password\": \"Employ\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 5: [password] 4 lettes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employee@\",\r\n    \"password\": \"Empl\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 6: [password] 7 lettes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employee@\",\r\n    \"password\": \"Employ1\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 7: [password] no UPPERCASE",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employee@\",\r\n    \"password\": \"employ12\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 8: [password] no lowercase",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employee@\",\r\n    \"password\": \"EMPLOY12\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 9: [password] no NUMBER",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Định dạng mật khẩu tối thiểu 8 kí tự, bao gồm: in hoa, in thường và số\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employee@\",\r\n    \"password\": \"Employ@@\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 10: wrong [account] employee@",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employ\",\r\n    \"password\": \"Employ12\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 11: wrong [account] employ123",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Tài khoản hoặc mật khẩu để trống, sai mật khẩu\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employ\",\r\n    \"password\": \"Employ@1234\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 13: sucessfull - [password] 8 letters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng nhập thành công\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Đăng nhập thành công\");\r",
+									"    pm.expect(pm.response.json().userId).to.not.null;\r",
+									"    pm.expect(pm.response.json().user.account).to.eql(\"employee@\");\r",
+									"});\r",
+									"pm.environment.set(\"employee@_token\", pm.response.json().token);\r",
+									"\r",
+									"postman.setNextRequest(\"NTD-LogOn - 14: sucessfull - [password] 11 letters\");\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employee@\",\r\n    \"password\": \"Employ12\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NTD-LogOn - 14: sucessfull - [password] 11 letters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Đăng nhập thành công\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.expect(pm.response.json().message).to.eql(\"Đăng nhập thành công\");\r",
+									"    pm.expect(pm.response.json().userId).to.not.null;\r",
+									"    pm.expect(pm.response.json().user.account).to.eql(\"employ123\");\r",
+									"});\r",
+									"pm.environment.set(\"employ123_token\", pm.response.json().token);\r",
+									"\r",
+									"postman.setNextRequest(\"4. ListWork - 1: successfull\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account\": \"employ123\",\r\n    \"password\": \"Employ@1234\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/company/login-company",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"company",
+								"login-company"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "5. LẤY THÔNG TIN USER",
+			"item": [
+				{
+					"name": "UserInfor - 1: right [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if(pm.response.code == 200)\r",
+									"{\r",
+									"    pm.test(\"Thành công, trả về thông tin người dùng\", function () {\r",
+									"        pm.response.to.have.status(200);\r",
+									"    });\r",
+									"}\r",
+									"if(pm.response.code != 200)\r",
+									"{\r",
+									"    pm.test(\"Có lỗi trong quá trình lấy dữ liệu\", function () {\r",
+									"        pm.response.to.have.status(500);\r",
+									"    });\r",
+									"}\r",
+									"\r",
+									"postman.setNextRequest(\"WorkUser - 1: right [Token]\");\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{test001_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/get-information-user",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"get-information-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserInfor - 2: undefined [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Chưa đăng nhập\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"postman.setNextRequest(\"UserInfor - 4: missing [Token]\");\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "@#$123",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/get-information-user",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"get-information-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserInfor - 3: wrong [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Chưa đăng nhập\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{employee@_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/get-information-user?token={{employee@_token}}",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"get-information-user"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{employee@_token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserInfor - 4: missing [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if(pm.response.code == 200)\r",
+									"{\r",
+									"    pm.test(\"Thành công, trả về thông tin người dùng\", function () {\r",
+									"        pm.response.to.have.status(200);\r",
+									"    });\r",
+									"}\r",
+									"if(pm.response.code != 200)\r",
+									"{\r",
+									"    pm.test(\"Có lỗi trong quá trình lấy dữ liệu\", function () {\r",
+									"        pm.response.to.have.status(500);\r",
+									"    });\r",
+									"}\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/users/get-information-user",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"get-information-user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "6. LẤY DANH SÁCH ỨNG VIÊN",
+			"item": [
+				{
+					"name": "WorkUser - 1: right [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if(pm.response.code == 200)\r",
+									"{\r",
+									"    pm.test(\"Thành công, trả về thông tin người dùng\", function () {\r",
+									"        pm.response.to.have.status(200);\r",
+									"    });\r",
+									"}\r",
+									"if(pm.response.code == 500)\r",
+									"{\r",
+									"    pm.test(\"Có lỗi trong quá trình lấy dữ liệu\", function () {\r",
+									"        pm.response.to.have.status(500);\r",
+									"    });\r",
+									"}\r",
+									"\r",
+									"postman.setNextRequest(\"Apply - 1: successfull\");\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/work-user/get-all-admin?token={{employee@_token}}",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"work-user",
+								"get-all-admin"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{employee@_token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WorkUser - 2: undefined [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Forbidden\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "@%23$123",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/work-user/get-all-admin",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"work-user",
+								"get-all-admin"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "@%23$123",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WorkUser - 3: wrong [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Forbidden\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/work-user/get-all-admin?token={{test001_token}}",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"work-user",
+								"get-all-admin"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "{{test001_token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WorkUser - 4: missing [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"    pm.test(\"Có lỗi trong quá trình lấy dữ liệu\", function () {\r",
+									"        pm.response.to.have.status(500);\r",
+									"    });\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/work-user/get-all-admin?token=",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"work-user",
+								"get-all-admin"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "7. ỨNG TUYỂN",
+			"item": [
+				{
+					"name": "Apply - 1: successfull",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Ứng tuyển thành công\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"postman.setNextRequest(\"8. ListCo - 1: successfull\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{test001_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobId\": \"{{jobId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/application/create-application",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"application",
+								"create-application"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply - 2: undefined [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Forbidden\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "@#$1234",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobId\": \"{{jobId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/application/create-application",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"application",
+								"create-application"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply - 3: wrong [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Forbidden\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"    pm.expect(pm.response.json().text).to.eql(\"Forbidden\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{employee@_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobId\": \"{{jobId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/application/create-application",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"application",
+								"create-application"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply - 4: missing [Token]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Forbidden\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"postman.setNextRequest(\"8. ListCo - 1: successfull\");\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobId\": \"{{jobId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/application/create-application",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"application",
+								"create-application"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply - 5: undefined [jobId]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Forbidden\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{test001_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobId\": \"@@@\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/application/create-application",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"application",
+								"create-application"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apply - 6: missing [jobId]",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Forbidden\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{test001_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobId\": \"\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.228.39.1:5000/api/application/create-application",
+							"protocol": "http",
+							"host": [
+								"13",
+								"228",
+								"39",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"application",
+								"create-application"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "4. ListWork - 1: successfull",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const result = pm.response.json();",
+							"const length = result.length;",
+							"",
+							"if(pm.response.code == 200)",
+							"{",
+							"    pm.test(\"Thành công, trả về danh sách công việc\", function()",
+							"    {",
+							"        pm.response.to.have.status(200);",
+							"    });",
+							"    for (var i = 0; i< length; i++)",
+							"    {",
+							"        if(result[i].nameWork == \"Testing\")",
+							"        {",
+							"            pm.environment.set(\"jobId\", result[i].id);",
+							"        }",
+							"    }",
+							"}",
+							"",
+							"if(pm.response.code != 200)",
+							"{",
+							"    pm.test(\"Có lỗi khi lấy danh sách\", function()",
+							"    {",
+							"        pm.response.to.have.status(500);",
+							"    });",
+							"}",
+							"",
+							"postman.setNextRequest(\"UserInfor - 1: right [Token]\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://13.228.39.1:5000/api/work/list-work",
+					"protocol": "http",
+					"host": [
+						"13",
+						"228",
+						"39",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"work",
+						"list-work"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8. ListCo - 1: successfull",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if(pm.response.code == 200)\r",
+							"{\r",
+							"    {\r",
+							"    pm.test(\"Thành công, trả về danh sách công việc\", function () {\r",
+							"        pm.response.to.have.status(200);\r",
+							"        });\r",
+							"    }\r",
+							"}\r",
+							"if(pm.response.code != 200)\r",
+							"{\r",
+							"    pm.test(\"Có lỗi trong quá trình lấy dữ liệu\", function () {\r",
+							"        pm.response.to.have.status(500);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"postman.setNextRequest(\"10. ListUser - 1: successfull\");\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://13.228.39.1:5000/api/company/getAllCompany",
+					"protocol": "http",
+					"host": [
+						"13",
+						"228",
+						"39",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"company",
+						"getAllCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9. ListApply - 1: successfull",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if(pm.response.code == 200)\r",
+							"{\r",
+							"    {\r",
+							"    pm.test(\"Thành công, trả về danh sách công việc\", function () {\r",
+							"        pm.response.to.have.status(200);\r",
+							"        });\r",
+							"    }\r",
+							"}\r",
+							"if(pm.response.code != 200)\r",
+							"{\r",
+							"    pm.test(\"Có lỗi trong quá trình lấy dữ liệu\", function () {\r",
+							"        pm.response.to.have.status(500);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://13.228.39.1:5000/api/application/getall-application",
+					"protocol": "http",
+					"host": [
+						"13",
+						"228",
+						"39",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"application",
+						"getall-application"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10. ListUser - 1: successfull",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"if(pm.response.code == 200)\r",
+							"{\r",
+							"    {\r",
+							"    pm.test(\"Thành công, trả về danh sách công việc\", function () {\r",
+							"        pm.response.to.have.status(200);\r",
+							"        });\r",
+							"    }\r",
+							"}\r",
+							"if(pm.response.code != 200)\r",
+							"{\r",
+							"    pm.test(\"Có lỗi trong quá trình lấy dữ liệu\", function () {\r",
+							"        pm.response.to.have.status(500);\r",
+							"    });\r",
+							"}\r",
+							"\r",
+							"postman.setNextRequest(null);\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://13.228.39.1:5000/api/users/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"13",
+						"228",
+						"39",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

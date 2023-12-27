@@ -1,0 +1,859 @@
+{
+	"id": "9744e123-11af-469b-9eb7-5989e928492f",
+	"name": "STP303x - ASM3",
+	"timestamp": "2023-12-01T03:52:24.917Z",
+	"collection_id": "29112866-1e77b582-603f-4974-8cba-f11fec7afee5",
+	"folder_id": 0,
+	"environment_id": "29112866-23fb9e32-ed58-4fc5-88a5-dd2a87fdceb7",
+	"totalPass": 18,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-12-01T03:52:14.465Z",
+	"totalFail": 9,
+	"results": [
+		{
+			"id": "4bc79d39-b06b-4b70-ab7d-d37cd057c3ae",
+			"name": "Register - 1: missing [name]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 447,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": true
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				447
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": true
+				}
+			]
+		},
+		{
+			"id": "4e623b74-5928-4a7f-8ed5-2c7c5986efdf",
+			"name": "Register - 2: missing [email]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 233,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": true
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				233
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": true
+				}
+			]
+		},
+		{
+			"id": "3d376218-0ee7-462c-adfd-bc87b53b0469",
+			"name": "Register - 3: missing [account]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 229,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": true
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				229
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": true
+				}
+			]
+		},
+		{
+			"id": "9d80df57-ba8c-4999-8ccf-3b2acee0eab6",
+			"name": "Register - 4: missing [password]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 190,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": true
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": true
+				}
+			]
+		},
+		{
+			"id": "cdb83f6b-64f0-40ca-aec6-246f373de4a0",
+			"name": "Register - 5: missing [phone]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 214,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": true
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				214
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": true
+				}
+			]
+		},
+		{
+			"id": "b1d25071-7e5a-416e-a8aa-54d05cd554a2",
+			"name": "Register - 6: missing [sex]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 234,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": false
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": false
+				}
+			]
+		},
+		{
+			"id": "a18268ef-a06b-4377-a17c-b7979b77b07a",
+			"name": "Register - 7: missing [birthday]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 213,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": false
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				213
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": false
+				}
+			]
+		},
+		{
+			"id": "941cdd44-06d7-48d6-8d45-b0564bc53cb7",
+			"name": "Register - 8: [password] 4 letters",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 304,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": false
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				304
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": false
+				}
+			]
+		},
+		{
+			"id": "3f7353fe-408a-4b34-9b95-1000bc8fbd88",
+			"name": "Register - 9: [password] 7 letters",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 234,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": false
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": false
+				}
+			]
+		},
+		{
+			"id": "4db2c769-db42-420e-8e3e-0613b1e7d5ec",
+			"name": "Register - 10: [password] no UPPCASE",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 197,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": false
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				197
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": false
+				}
+			]
+		},
+		{
+			"id": "2315d625-4f23-4cff-80ea-67a8460341ff",
+			"name": "Register - 11: [password] no lowercase",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 211,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": false
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				211
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": false
+				}
+			]
+		},
+		{
+			"id": "21f597ac-3ca2-41a4-a08c-ad8c5c0d9a9b",
+			"name": "Register - 12: [password] no NUMBER",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 213,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": false
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				213
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": false
+				}
+			]
+		},
+		{
+			"id": "29976d3c-6aa1-4ff7-a43b-13cb9d339475",
+			"name": "Register - 13: missing [avatar]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 52,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": true
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				52
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": true
+				}
+			]
+		},
+		{
+			"id": "9c00a241-6fab-4dfa-af99-a547af7d8036",
+			"name": "Register - 14: wrong format [email]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 231,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": true
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				231
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": true
+				}
+			]
+		},
+		{
+			"id": "40270111-f4f6-42f5-a61c-7247600bfbe6",
+			"name": "Register - 15: wrong format [phone]",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 234,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Đã xảy ra lỗi khi đăng ký": true
+			},
+			"testPassFailCounts": {
+				"Đã xảy ra lỗi khi đăng ký": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Đã xảy ra lỗi khi đăng ký": true
+				}
+			]
+		},
+		{
+			"id": "59aacd0a-951a-4e7a-b052-fc090dad6f4d",
+			"name": "Register - 17: [password] 8 letters",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 198,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đăng ký thông tin và tài khoản thành công": true
+			},
+			"testPassFailCounts": {
+				"Đăng ký thông tin và tài khoản thành công": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				198
+			],
+			"allTests": [
+				{
+					"Đăng ký thông tin và tài khoản thành công": true
+				}
+			]
+		},
+		{
+			"id": "7fe45ade-03d7-44ff-8736-378955d7be8e",
+			"name": "Register - 18: [password] 11 letters",
+			"url": "http://13.228.39.1:5000/api/users/register",
+			"time": 228,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Đăng ký thông tin và tài khoản thành công": true
+			},
+			"testPassFailCounts": {
+				"Đăng ký thông tin và tài khoản thành công": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				228
+			],
+			"allTests": [
+				{
+					"Đăng ký thông tin và tài khoản thành công": true
+				}
+			]
+		},
+		{
+			"id": "ce063e21-13e3-49ed-a7dd-0b56be6c15f5",
+			"name": "UV-LogOn - 13: sucessfull - [password] 8 letters",
+			"url": "http://13.228.39.1:5000/api/users/login",
+			"time": 55,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Đăng nhập thành công": true
+			},
+			"testPassFailCounts": {
+				"Đăng nhập thành công": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				55
+			],
+			"allTests": [
+				{
+					"Đăng nhập thành công": true
+				}
+			]
+		},
+		{
+			"id": "60e5a831-2d48-48f2-b20f-40490ca080be",
+			"name": "UV-LogOn - 14: sucessfull - [password] 11 letters",
+			"url": "http://13.228.39.1:5000/api/users/login",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Đăng nhập thành công": true
+			},
+			"testPassFailCounts": {
+				"Đăng nhập thành công": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Đăng nhập thành công": true
+				}
+			]
+		},
+		{
+			"id": "41c6524e-74fb-4266-9c25-835f7611ecd8",
+			"name": "NTD-LogOn - 13: sucessfull - [password] 8 letters",
+			"url": "http://13.228.39.1:5000/api/company/login-company",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Đăng nhập thành công": true
+			},
+			"testPassFailCounts": {
+				"Đăng nhập thành công": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Đăng nhập thành công": true
+				}
+			]
+		},
+		{
+			"id": "ff96a63c-b5af-4725-bcde-97319a3158d6",
+			"name": "NTD-LogOn - 14: sucessfull - [password] 11 letters",
+			"url": "http://13.228.39.1:5000/api/company/login-company",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Đăng nhập thành công": true
+			},
+			"testPassFailCounts": {
+				"Đăng nhập thành công": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Đăng nhập thành công": true
+				}
+			]
+		},
+		{
+			"id": "b1aefdd3-c59a-41ea-8bf5-a587c3337644",
+			"name": "4. ListWork - 1: successfull",
+			"url": "http://13.228.39.1:5000/api/work/list-work",
+			"time": 430,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Thành công, trả về danh sách công việc": true
+			},
+			"testPassFailCounts": {
+				"Thành công, trả về danh sách công việc": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				430
+			],
+			"allTests": [
+				{
+					"Thành công, trả về danh sách công việc": true
+				}
+			]
+		},
+		{
+			"id": "3d7cbdb0-d0a3-431b-8d7d-1e037bbf00bf",
+			"name": "UserInfor - 1: right [Token]",
+			"url": "http://13.228.39.1:5000/api/users/get-information-user",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Thành công, trả về thông tin người dùng": true
+			},
+			"testPassFailCounts": {
+				"Thành công, trả về thông tin người dùng": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"Thành công, trả về thông tin người dùng": true
+				}
+			]
+		},
+		{
+			"id": "104ab747-1f48-4e4b-859b-693fd27f7a77",
+			"name": "WorkUser - 1: right [Token]",
+			"url": "http://13.228.39.1:5000/api/work-user/get-all-admin?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiZW1wbG95ZWVAIiwidHlwZSI6Ik5IQVRVWUVORFVORyIsImlkIjoxMDE5LCJlbWFpbCI6InF1eWVudGRiQGZ1bml4LmVkdS52biIsImlhdCI6MTcwMTQwMjgwNywiZXhwIjoxNzAxNDA2NDA3fQ.sJV_43rArpYATOAOj9f7wrGGpMYLAl4-OXKpcqThmgw",
+			"time": 675,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Thành công, trả về thông tin người dùng": true
+			},
+			"testPassFailCounts": {
+				"Thành công, trả về thông tin người dùng": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				675
+			],
+			"allTests": [
+				{
+					"Thành công, trả về thông tin người dùng": true
+				}
+			]
+		},
+		{
+			"id": "0cea3eea-6ec3-4e23-be27-9f6a81445569",
+			"name": "Apply - 1: successfull",
+			"url": "http://13.228.39.1:5000/api/application/create-application",
+			"time": 55,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Ứng tuyển thành công": true
+			},
+			"testPassFailCounts": {
+				"Ứng tuyển thành công": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				55
+			],
+			"allTests": [
+				{
+					"Ứng tuyển thành công": true
+				}
+			]
+		},
+		{
+			"id": "d76191aa-6e43-4574-ad0a-ae678a5612fe",
+			"name": "8. ListCo - 1: successfull",
+			"url": "http://13.228.39.1:5000/api/company/getAllCompany",
+			"time": 369,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Có lỗi trong quá trình lấy dữ liệu": false
+			},
+			"testPassFailCounts": {
+				"Có lỗi trong quá trình lấy dữ liệu": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				369
+			],
+			"allTests": [
+				{
+					"Có lỗi trong quá trình lấy dữ liệu": false
+				}
+			]
+		},
+		{
+			"id": "b22a6b51-6918-466a-9f8c-5e9da27a0f22",
+			"name": "10. ListUser - 1: successfull",
+			"url": "http://13.228.39.1:5000/api/users/getAllUsers",
+			"time": 1285,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Có lỗi trong quá trình lấy dữ liệu": false
+			},
+			"testPassFailCounts": {
+				"Có lỗi trong quá trình lấy dữ liệu": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1285
+			],
+			"allTests": [
+				{
+					"Có lỗi trong quá trình lấy dữ liệu": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6937,
+	"collection": {
+		"requests": [
+			{
+				"id": "4bc79d39-b06b-4b70-ab7d-d37cd057c3ae",
+				"method": "POST"
+			},
+			{
+				"id": "4e623b74-5928-4a7f-8ed5-2c7c5986efdf",
+				"method": "POST"
+			},
+			{
+				"id": "3d376218-0ee7-462c-adfd-bc87b53b0469",
+				"method": "POST"
+			},
+			{
+				"id": "9d80df57-ba8c-4999-8ccf-3b2acee0eab6",
+				"method": "POST"
+			},
+			{
+				"id": "cdb83f6b-64f0-40ca-aec6-246f373de4a0",
+				"method": "POST"
+			},
+			{
+				"id": "b1d25071-7e5a-416e-a8aa-54d05cd554a2",
+				"method": "POST"
+			},
+			{
+				"id": "a18268ef-a06b-4377-a17c-b7979b77b07a",
+				"method": "POST"
+			},
+			{
+				"id": "941cdd44-06d7-48d6-8d45-b0564bc53cb7",
+				"method": "POST"
+			},
+			{
+				"id": "3f7353fe-408a-4b34-9b95-1000bc8fbd88",
+				"method": "POST"
+			},
+			{
+				"id": "4db2c769-db42-420e-8e3e-0613b1e7d5ec",
+				"method": "POST"
+			},
+			{
+				"id": "2315d625-4f23-4cff-80ea-67a8460341ff",
+				"method": "POST"
+			},
+			{
+				"id": "21f597ac-3ca2-41a4-a08c-ad8c5c0d9a9b",
+				"method": "POST"
+			},
+			{
+				"id": "29976d3c-6aa1-4ff7-a43b-13cb9d339475",
+				"method": "POST"
+			},
+			{
+				"id": "9c00a241-6fab-4dfa-af99-a547af7d8036",
+				"method": "POST"
+			},
+			{
+				"id": "40270111-f4f6-42f5-a61c-7247600bfbe6",
+				"method": "POST"
+			},
+			{
+				"id": "59aacd0a-951a-4e7a-b052-fc090dad6f4d",
+				"method": "POST"
+			},
+			{
+				"id": "7fe45ade-03d7-44ff-8736-378955d7be8e",
+				"method": "POST"
+			},
+			{
+				"id": "ce063e21-13e3-49ed-a7dd-0b56be6c15f5",
+				"method": "POST"
+			},
+			{
+				"id": "60e5a831-2d48-48f2-b20f-40490ca080be",
+				"method": "POST"
+			},
+			{
+				"id": "41c6524e-74fb-4266-9c25-835f7611ecd8",
+				"method": "POST"
+			},
+			{
+				"id": "ff96a63c-b5af-4725-bcde-97319a3158d6",
+				"method": "POST"
+			},
+			{
+				"id": "b1aefdd3-c59a-41ea-8bf5-a587c3337644",
+				"method": "GET"
+			},
+			{
+				"id": "3d7cbdb0-d0a3-431b-8d7d-1e037bbf00bf",
+				"method": "GET"
+			},
+			{
+				"id": "104ab747-1f48-4e4b-859b-693fd27f7a77",
+				"method": "GET"
+			},
+			{
+				"id": "0cea3eea-6ec3-4e23-be27-9f6a81445569",
+				"method": "POST"
+			},
+			{
+				"id": "d76191aa-6e43-4574-ad0a-ae678a5612fe",
+				"method": "GET"
+			},
+			{
+				"id": "b22a6b51-6918-466a-9f8c-5e9da27a0f22",
+				"method": "GET"
+			}
+		]
+	}
+}
